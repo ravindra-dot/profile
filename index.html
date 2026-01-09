@@ -299,15 +299,53 @@
   </div>
 </section>
 
-  <section>
-    <form action="https://api.web3forms.com/submit" method="POST">
-          <input type="hidden" name="access_key" value="08d2eff9-d16f-49fb-82d4-4d8bfbf674de">
-          <input type="text" name="name" required>
-          <input type="email" name="email" required>
-          <textarea name="message" required></textarea>
-      <button type="submit">Submit</button>
-</form>
-  </section>
+<section id="contact" class="py-5 bg-body-tertiary">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Get In Touch</h2>
+      <div class="bg-warning mx-auto" style="height: 4px; width: 50px; border-radius: 2px;"></div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="card border-0 shadow-sm p-4 p-md-5" style="border-radius: 20px;">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="08d2eff9-d16f-49fb-82d4-4d8bfbf674de">
+
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label fw-semibold text-muted">Full Name</label>
+                <div class="input-group">
+                  <span class="input-group-text bg-light border-0"><i class="bi bi-person"></i></span>
+                  <input type="text" name="name" class="form-control bg-light border-0" placeholder="John Doe" required>
+                </div>
+              </div>
+              
+              <div class="col-md-6">
+                <label class="form-label fw-semibold text-muted">Email Address</label>
+                <div class="input-group">
+                  <span class="input-group-text bg-light border-0"><i class="bi bi-envelope"></i></span>
+                  <input type="email" name="email" class="form-control bg-light border-0" placeholder="name@example.com" required>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label class="form-label fw-semibold text-muted">Message</label>
+                <textarea name="message" class="form-control bg-light border-0" rows="5" placeholder="Tell me about your project..." required></textarea>
+              </div>
+
+              <div class="col-12 text-center mt-4">
+                <button type="submit" class="btn btn-warning btn-lg px-5 rounded-pill shadow-sm fw-bold">
+                  Send Message <i class="bi bi-send-fill ms-2"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
   <footer id="contact" class="py-5 bg-dark text-white text-center">
     <div class="container">
@@ -327,3 +365,4 @@
 </body>
 
 </html>
+
